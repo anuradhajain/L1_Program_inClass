@@ -27,14 +27,14 @@ namespace L1_Program_inClass
                 double s = (a + b + c) / 2;
                 double Area = Math.Sqrt(s *(s - a) * (s - b) * (s - c));
 
-                // Displaying the area to teh console
+                // Displaying the area to the console
                 Console.WriteLine("The area of the triangle is: " + Area);
 
                 //Execise 2
 
                 // taking a number as user input and identifying it as even or odd
                 Console.WriteLine("\nPlease enter a number to find if it is odd or even:");
-                string input = Console.ReadLine();
+                string input = Console.ReadLine(); // Reading from console
 
                 int number = int.Parse(input); // parsing the input to an integer
 
@@ -70,6 +70,26 @@ namespace L1_Program_inClass
 
                 // Displaying the maximum of 3 numbers on the console
                 Console.WriteLine("The maximum of " + number1 + ", " + number2 + " and " + number3 + " is: " + max_num);
+
+                //Execise 4
+
+                // taking a number as user input and finding the sum till that number
+                Console.WriteLine("\nPlease enter a number to find the sum till that number:");
+
+                string input_sum = Console.ReadLine(); // Reading from console
+
+                 int n = int.Parse(input_sum); // parsing the input to an integer
+
+                int sum = 0; // initializing the sum variable
+
+                // For loop to calculate the sum to numbers
+                for (int i = 0; i <= n  ; i++)
+                {
+                    sum += i;
+                } // end of for loop
+
+                // Displaying the sum to the console
+                Console.WriteLine("The sum is: " + sum);
 
                 // taking user input for exit statement
                 Console.WriteLine("\nPress any key to exit");
